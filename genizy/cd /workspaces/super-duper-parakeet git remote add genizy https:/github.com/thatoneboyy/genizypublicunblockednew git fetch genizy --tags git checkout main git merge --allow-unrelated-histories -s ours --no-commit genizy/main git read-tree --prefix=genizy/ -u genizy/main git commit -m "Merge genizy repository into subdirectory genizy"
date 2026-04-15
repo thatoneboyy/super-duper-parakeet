@@ -7,3 +7,4 @@ git merge --allow-unrelated-histories -s ours --no-commit genizy/main
 git read-tree --prefix=genizy/ -u genizy/main
 git commit -m "Merge genizy repository into subdirectory genizy"
 
+git push orgin main
