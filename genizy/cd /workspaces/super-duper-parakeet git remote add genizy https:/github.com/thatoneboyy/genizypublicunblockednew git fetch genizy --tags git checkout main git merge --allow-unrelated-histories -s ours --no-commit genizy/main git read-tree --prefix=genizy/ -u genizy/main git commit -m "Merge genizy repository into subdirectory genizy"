@@ -1,0 +1,9 @@
+cd /workspaces/super-duper-parakeet
+git remote add genizy https:https://github.com/thatoneboyy/gnmath-best-games-collection-2026
+
+git fetch genizy --tags
+git checkout main
+git merge --allow-unrelated-histories -s ours --no-commit genizy/main
+git read-tree --prefix=genizy/ -u genizy/main
+git commit -m "Merge genizy repository into subdirectory genizy"
+
